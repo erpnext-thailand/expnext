@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400">
+  <!-- Background -->
+  <rect width="500" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Document/Ledger -->
+  <rect x="100" y="80" width="300" height="240" fill="#ffffff" stroke="#4e73df" stroke-width="3" rx="5" ry="5"/>
+  
+  <!-- Header Lines -->
+  <line x1="120" y1="110" x2="380" y2="110" stroke="#4e73df" stroke-width="2"/>
+  <line x1="120" y1="140" x2="380" y2="140" stroke="#4e73df" stroke-width="2"/>
+  
+  <!-- Content Lines -->
+  <line x1="120" y1="170" x2="380" y2="170" stroke="#e3e6f0" stroke-width="2"/>
+  <line x1="120" y1="200" x2="380" y2="200" stroke="#e3e6f0" stroke-width="2"/>
+  <line x1="120" y1="230" x2="380" y2="230" stroke="#e3e6f0" stroke-width="2"/>
+  <line x1="120" y1="260" x2="380" y2="260" stroke="#e3e6f0" stroke-width="2"/>
+  <line x1="120" y1="290" x2="380" y2="290" stroke="#e3e6f0" stroke-width="2"/>
+  
+  <!-- Vertical Line -->
+  <line x1="250" y1="110" x2="250" y2="290" stroke="#e3e6f0" stroke-width="2"/>
+  
+  <!-- Calculator -->
+  <rect x="400" y="150" width="60" height="80" fill="#4e73df" rx="5" ry="5"/>
+  <rect x="410" y="160" width="40" height="20" fill="#ffffff" rx="2" ry="2"/>
+  
+  <!-- Calculator Buttons -->
+  <circle cx="415" cy="195" r="5" fill="#ffffff"/>
+  <circle cx="430" cy="195" r="5" fill="#ffffff"/>
+  <circle cx="445" cy="195" r="5" fill="#ffffff"/>
+  <circle cx="415" cy="210" r="5" fill="#ffffff"/>
+  <circle cx="430" cy="210" r="5" fill="#ffffff"/>
+  <circle cx="445" cy="210" r="5" fill="#ffffff"/>
+  
+  <!-- Coins -->
+  <circle cx="70" cy="200" r="25" fill="#ffc107" stroke="#e0a800" stroke-width="2"/>
+  <circle cx="50" cy="230" r="25" fill="#ffc107" stroke="#e0a800" stroke-width="2"/>
+  <circle cx="80" cy="240" r="25" fill="#ffc107" stroke="#e0a800" stroke-width="2"/>
+  
+  <!-- Dollar Signs -->
+  <text x="70" y="205" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">$</text>
+  <text x="50" y="235" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">$</text>
+  <text x="80" y="245" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">$</text>
+  
+  <!-- Chart -->
+  <polyline points="120,80 150,60 180,70 210,40 240,50 270,30" fill="none" stroke="#28a745" stroke-width="3"/>
+  <circle cx="120" cy="80" r="4" fill="#28a745"/>
+  <circle cx="150" cy="60" r="4" fill="#28a745"/>
+  <circle cx="180" cy="70" r="4" fill="#28a745"/>
+  <circle cx="210" cy="40" r="4" fill="#28a745"/>
+  <circle cx="240" cy="50" r="4" fill="#28a745"/>
+  <circle cx="270" cy="30" r="4" fill="#28a745"/>
+</svg>

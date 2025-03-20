@@ -1,0 +1,220 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _('ExpNext - Accounting Solution') }}{% endblock %}
+
+{% block page_content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row hero-section py-5">
+        <div class="col-md-6">
+            <h1 class="display-4 text-primary mb-3">{{ _('ExpNext Accounting') }}</h1>
+            <p class="lead mb-4">{{ _('Complete accounting solution for modern businesses') }}</p>
+            <p class="mb-4">{{ _('ExpNext provides a comprehensive suite of accounting tools designed to streamline your financial operations, improve accuracy, and provide valuable insights for better decision-making.') }}</p>
+            <div class="d-flex flex-wrap">
+                <a href="/app/dashboard" class="btn btn-primary me-3 mb-3">{{ _('Go to Dashboard') }}</a>
+                <a href="/services" class="btn btn-outline-primary mb-3">{{ _('Explore Services') }}</a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/assets/expnext/img/accounting-hero.svg" alt="ExpNext Accounting" class="img-fluid rounded shadow-sm">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row py-5">
+        <div class="col-12 text-center mb-4">
+            <h2 class="text-primary">{{ _('Key Features') }}</h2>
+            <p class="lead">{{ _('Powerful tools to manage your finances') }}</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-chart-line fa-3x mb-3 text-primary"></i>
+                    <h4>{{ _('Financial Reporting') }}</h4>
+                    <p>{{ _('Generate comprehensive financial reports including balance sheets, income statements, and cash flow statements.') }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-file-invoice fa-3x mb-3 text-primary"></i>
+                    <h4>{{ _('Invoicing') }}</h4>
+                    <p>{{ _('Create and manage professional invoices, track payments, and send automated reminders for overdue invoices.') }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-money-bill-wave fa-3x mb-3 text-primary"></i>
+                    <h4>{{ _('Expense Management') }}</h4>
+                    <p>{{ _('Track and categorize expenses, manage receipts, and generate expense reports for better financial control.') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modules Section -->
+    <div class="row py-5 bg-light rounded">
+        <div class="col-12 text-center mb-4">
+            <h2 class="text-primary">{{ _('Integrated Modules') }}</h2>
+            <p class="lead">{{ _('Everything you need in one platform') }}</p>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-book fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('General Ledger') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-users fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Accounts Receivable') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-building fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Accounts Payable') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-warehouse fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Inventory') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-shopping-cart fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Sales') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-truck fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Purchasing') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-calculator fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Fixed Assets') }}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa fa-chart-bar fa-2x mb-3 text-primary"></i>
+                    <h5>{{ _('Analytics') }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="row py-5">
+        <div class="col-12 text-center mb-4">
+            <h2 class="text-primary">{{ _('What Our Clients Say') }}</h2>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <p class="font-italic">"ExpNext has transformed how we manage our finances. The interface is intuitive and the reporting features are exceptional."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <h5 class="mb-0">Somchai Jaidee</h5>
+                            <small class="text-muted">CFO, Example Company</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <p class="font-italic">"The customer support team at ExpNext is outstanding. They've helped us customize the system to perfectly fit our unique business needs."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <h5 class="mb-0">Pranee Suksai</h5>
+                            <small class="text-muted">Owner, Suksai Enterprises</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="row py-5 mb-5">
+        <div class="col-12 text-center bg-primary text-white p-5 rounded">
+            <h2>{{ _('Ready to Get Started?') }}</h2>
+            <p class="lead mb-4">{{ _('Join thousands of businesses that trust ExpNext for their accounting needs.') }}</p>
+            <a href="/app/dashboard" class="btn btn-light btn-lg">{{ _('Go to Dashboard') }}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block style %}
+<style>
+    .hero-section {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 8px;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    .text-primary {
+        color: #4e73df !important;
+    }
+    .bg-primary {
+        background-color: #4e73df !important;
+    }
+    .btn-primary {
+        background-color: #4e73df;
+        border-color: #4e73df;
+    }
+    .btn-outline-primary {
+        color: #4e73df;
+        border-color: #4e73df;
+    }
+    .btn-outline-primary:hover {
+        background-color: #4e73df;
+        color: white;
+    }
+</style>
+{% endblock %}

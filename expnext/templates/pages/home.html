@@ -1,0 +1,114 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _('ExpNext Accounting') }}{% endblock %}
+
+{% block page_content %}
+<div class="container">
+    <div class="row hero">
+        <div class="col-md-6">
+            <h1>{{ _('ExpNext Accounting') }} Lim</h1>
+            <p class="lead">{{ _('Modern Accounting Solution for Your Business') }}</p>
+            <p>{{ _('Streamline your financial operations with our comprehensive accounting solution.') }}</p>
+            <div class="mt-4">
+                <a href="/login" class="btn btn-primary">{{ _('Login') }}</a>
+                <a href="/contact" class="btn btn-outline-primary ml-3">{{ _('Contact Us') }}</a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/assets/expnext/img/accounting-hero.svg" alt="ExpNext Accounting" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row mt-5 features">
+        <div class="col-12 text-center mb-4">
+            <h2>{{ _('Key Features') }}</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fa fa-chart-line fa-3x mb-3 text-primary"></i>
+                    <h4>{{ _('Financial Reporting') }}</h4>
+                    <p>{{ _('Comprehensive financial reports to help you make informed decisions.') }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fa fa-receipt fa-3x mb-3 text-primary"></i>
+                    <h4>{{ _('Invoice Management') }}</h4>
+                    <p>{{ _('Create, send, and track invoices with ease.') }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fa fa-tasks fa-3x mb-3 text-primary"></i>
+                    <h4>{{ _('Expense Tracking') }}</h4>
+                    <p>{{ _('Monitor and categorize expenses to optimize your spending.') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 testimonials">
+        <div class="col-12 text-center mb-4">
+            <h2>{{ _('What Our Clients Say') }}</h2>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="font-italic">"ExpNext has transformed how we manage our finances. The interface is intuitive and the reporting features are exceptional."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="ml-3">
+                            <h5 class="mb-0">John Smith</h5>
+                            <small>CFO, Example Company</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="font-italic">"The customer support team at ExpNext is outstanding. They've helped us customize the system to perfectly fit our unique business needs."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="ml-3">
+                            <h5 class="mb-0">Sarah Johnson</h5>
+                            <small>Owner, Johnson Enterprises</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 cta">
+        <div class="col-12 text-center py-5">
+            <h2>{{ _('Ready to Get Started?') }}</h2>
+            <p class="lead">{{ _('Join thousands of businesses that trust ExpNext for their accounting needs.') }}</p>
+            <a href="/contact" class="btn btn-lg btn-primary mt-3">{{ _('Contact Us Today') }}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block style %}
+<style>
+    .hero {
+        padding: 4rem 0;
+    }
+    .features .card {
+        transition: transform 0.3s;
+    }
+    .features .card:hover {
+        transform: translateY(-10px);
+    }
+    .cta {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+</style>
+{% endblock %}

@@ -4,6 +4,8 @@ app_publisher = "limweb@hotmail.com"
 app_description = "ExpNext Accounting"
 app_email = "limweb@hotmail.com"
 app_license = "mit"
+required_apps = ["erpnext"]
+
 
 # Apps
 # ------------------
@@ -11,15 +13,14 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "expnext",
-# 		"logo": "/assets/expnext/logo.png",
-# 		"title": "ExpNext",
-# 		"route": "/expnext",
-# 		"has_permission": "expnext.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "expnext",
+		"logo": "/assets/expnext/img/expnext-logo.svg",
+		"title": "ExpNext",
+		"route": "/expnext"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -29,7 +30,7 @@ app_license = "mit"
 # app_include_js = "/assets/expnext/js/expnext.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/expnext/css/expnext.css"
+web_include_css = "/assets/expnext/css/home.css"
 # web_include_js = "/assets/expnext/js/expnext.js"
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -57,7 +58,7 @@ app_license = "mit"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "home"
 
 # website user home page (by Role)
 # role_home_page = {
@@ -68,7 +69,7 @@ app_license = "mit"
 # ----------
 
 # automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
+website_generators = ["Custom Page"]
 
 # automatically load and sync documents of this doctype from downstream apps
 # importable_doctypes = [doctype_1]
@@ -139,6 +140,11 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
+# Fixtures
+# --------
+# Used to export and import data from and to your site
+fixtures = ["Web Page"]
 
 # Scheduled Tasks
 # ---------------
@@ -236,4 +242,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

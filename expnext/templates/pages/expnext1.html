@@ -1,0 +1,72 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _('ExpNext1 - Custom Page') }}{% endblock %}
+
+{% block page_content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="display-4 mb-4">{{ _('Welcome to ExpNext1') }}</h1>
+            <p class="lead">{{ _('This is a custom page for the ExpNext application') }}</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">{{ _('Features') }}</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-check-circle text-success mr-2"></i> {{ _('Advanced Accounting') }}</li>
+                        <li><i class="fa fa-check-circle text-success mr-2"></i> {{ _('Financial Reporting') }}</li>
+                        <li><i class="fa fa-check-circle text-success mr-2"></i> {{ _('Invoice Management') }}</li>
+                        <li><i class="fa fa-check-circle text-success mr-2"></i> {{ _('Expense Tracking') }}</li>
+                        <li><i class="fa fa-check-circle text-success mr-2"></i> {{ _('Multi-currency Support') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">{{ _('Benefits') }}</h3>
+                    <p>{{ _('ExpNext provides a comprehensive accounting solution that helps businesses:') }}</p>
+                    <ul>
+                        <li>{{ _('Save time with automated processes') }}</li>
+                        <li>{{ _('Gain insights with detailed financial reports') }}</li>
+                        <li>{{ _('Improve accuracy with integrated systems') }}</li>
+                        <li>{{ _('Enhance compliance with regulatory requirements') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">{{ _('Get Started Today') }}</h3>
+                    <p>{{ _('Contact our team to learn more about how ExpNext can help your business streamline financial operations.') }}</p>
+                    <a href="/contact" class="btn btn-primary">{{ _('Contact Us') }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block style %}
+<style>
+    .card {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .list-unstyled li {
+        margin-bottom: 10px;
+    }
+</style>
+{% endblock %}

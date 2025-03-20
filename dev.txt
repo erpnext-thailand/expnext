@@ -1,0 +1,33 @@
+docker-compose up -d
+bench init --skip-redis-config-generation frappe-bench
+cd frappe-bench
+bench set-config -g db_host mariadb
+bench set-config -g redis_cache redis://redis-cache:6379
+bench set-config -g redis_queue redis://redis-queue:6379
+bench set-config -g redis_socketio redis://redis-queue:6379
+bench new-site  erpnext.local
+  db: mysql
+  user: root
+  pass: 123
+  administrator: 1234
+bench use erpnext.local
+
+bench get-app  erpnext
+
+bench --site erpnext.local install-app erpnext
+bench --site erpnext.local install-app erpnext_thailand
+bench --site erpnext.local set-config developer_mode 1
+bench --site erpnext.local clear-cache
+bench clear-cache
+bench start
+
+
+bench new-app  expnext
+bench --site erpnext.local install-app expnext
+bench --site erpnext.local uninstall-app expnext
+
+bench --site erpnext.local show-pending-migrations
+bench --site erpnext.local migrate
+
+bench --site erpnext.local clear-cache
+bench start
