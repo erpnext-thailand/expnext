@@ -8,26 +8,22 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app expnext
+bench get-app https://github.com/erpnext-thailand/expnext.git --branch develop
+bench --site [site-name] install-app expnext
+bench --site [site-name] migrate
+bench --site [site-name] clear-cache
+bench start
 ```
 
 ### Contributing
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
 ```bash
-cd apps/expnext
-pre-commit install
+docker-compose up -d
+docker-compose exec -it frappe bash
+cd frappe-bench
+# type your bench command
+bench start
 ```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
 ### License
 
 mit
